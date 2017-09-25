@@ -58,8 +58,12 @@ with [lhttp javascript sdk](https://github.com/fanux/lhttp-javascript-sdk) we co
 
 #### Quick start
 ```bash
-go get github.com/nats-io/nats
+go get github.com/nats-io/gnatsd
 go get github.com/fanux/lhttp
+cd  websocketServer
+go build -o lhttpd
+gnatsd &
+./lhttpd
 ```
 We need run gnatsd first:
 ```bash
